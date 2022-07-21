@@ -37,4 +37,4 @@
 **SELECT * FROM country WHERE country ILIKE 'A%A';**
 
 ## Soru 2
-**SELECT * FROM country WHERE country ILIKE '_____ % n';**
+**SELECT * FROM country WHERE country ILIKE '_____%n';**
