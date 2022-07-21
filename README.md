@@ -38,3 +38,9 @@
 
 ## Soru 2
 **SELECT * FROM country WHERE country ILIKE '_____%n';**
+
+## Soru 3
+SELECT * FROM film WHERE title ILIKE '%t%t%t%t';
+
+## Soru 4
+SELECT * FROM film WHERE title LIKE'C%' AND length>90 AND rental_rate=2.99;
