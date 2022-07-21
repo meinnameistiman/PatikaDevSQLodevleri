@@ -1,4 +1,4 @@
-# patika.dev SQL ödevleri.
+# patika.dev SQL ödevleri. (ÖDEV 1 - 3)
 
 
 # Odev 1
@@ -29,3 +29,12 @@
 
 ## Soru 3
 **SELECT * FROM film WHERE rental_rate IN (0.99,2.99,4.99) AND replacement_cost IN (12.99,15.99,28.99);**
+
+
+# Odev 3
+
+## Soru 1
+**SELECT * FROM country WHERE country ILIKE 'A%A';**
+
+## Soru 2
+**SELECT * FROM country WHERE country ILIKE '_____ % n';**
