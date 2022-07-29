@@ -1,4 +1,4 @@
-# patika.dev SQL ödevleri. (ÖDEV 1 - 5)
+# patika.dev SQL ödevleri. (ÖDEV 1 - 6)
 
 
 # Odev 1
@@ -76,3 +76,18 @@
 
 ## Soru 3
 **SELECT last_name, store_id FROM customer WHERE store_id = 1 ORDER BY last_name DESC LIMIT 4;**
+
+
+# Odev 6
+
+## Soru 1
+**SELECT round (AVG(rental_rate),2 ) FROM film;**
+
+## Soru 2
+**SELECT COUNT (title) FROM film WHERE title  ILIKE 'C%';**
+
+## Soru 3
+**SELECT MAX(LENGTH) FROM film WHERE rental_rate = 0.99;**
+
+## Soru 4
+**SELECT COUNT(DISTINCT(replacement_cost)) FROM film  WHERE LENGTH > 150; **
