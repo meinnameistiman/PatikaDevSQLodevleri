@@ -94,7 +94,7 @@
 
 
 
-# Odev 6
+# Odev 7
 
 ## Soru 1
 SELECT rating FROM film GROUP BY rating ;
