@@ -1,4 +1,4 @@
-# patika.dev SQL ödevleri. (ÖDEV 1 - 6)
+# patika.dev SQL ödevleri. (ÖDEV 1 - 8)
 
 
 # Odev 1
