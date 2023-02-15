@@ -107,3 +107,32 @@ SELECT store_id, COUNT(*) FROM customer GROUP BY store_id ;
 
 ## Soru 4
 SELECT country_id , Count(*) FROM city GROUP BY country_idORDER BY Count(*) DESC LIMIT 1;
+
+
+
+# Odev 8
+
+## Soru 1
+CREATE TABLE employee (
+id INTEGER PRIMARY KEY,  
+name VARCHAR(50) NOT NULL, 
+birthday DATE,  
+email VARCHAR(100)
+);
+
+## Soru 2
+insert into employee (id, name, birthday, email) values (1, 'Name Surname', '10.10.2000', 'email@mail.com');
+
+## Soru 3
+UPDATE employee
+SET name = 'Name Surname',
+	birthday = '10.10.2000',
+		email ='email@mail.com'
+WHERE id = 1
+RETURNING *;
+
+## Soru 4
+DELETE FROM employee
+WHERE name = 'Name Surname';
+RETURNING * ;
+
