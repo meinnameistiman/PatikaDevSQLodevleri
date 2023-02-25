@@ -18,6 +18,7 @@
 ## Soru 5
 **SELECT * FROM film WHERE NOT(length > 50 AND rental_rate = 2.99 AND rental_rate = 4.99)**
 
+*******************************************************************
 
 # Odev 2
 
@@ -30,6 +31,7 @@
 ## Soru 3
 **SELECT * FROM film WHERE rental_rate IN (0.99,2.99,4.99) AND replacement_cost IN (12.99,15.99,28.99);**
 
+*******************************************************************
 
 # Odev 3
 
@@ -45,6 +47,7 @@
 ## Soru 4
 **SELECT * FROM film WHERE title LIKE'C%' AND length>90 AND rental_rate=2.99;**
 
+*******************************************************************
 
 # Odev 4
 
@@ -64,7 +67,7 @@
 
 **SELECT COUNT(*) FROM city WHERE city ILIKE'%R';**
 
-
+*******************************************************************
 
 # Odev 5
 
@@ -77,6 +80,7 @@
 ## Soru 3
 **SELECT last_name, store_id FROM customer WHERE store_id = 1 ORDER BY last_name DESC LIMIT 4;**
 
+*******************************************************************
 
 # Odev 6
 
@@ -92,7 +96,7 @@
 ## Soru 4
 **SELECT COUNT(DISTINCT(replacement_cost)) FROM film  WHERE LENGTH > 150;**
 
-
+*******************************************************************
 
 # Odev 7
 
@@ -108,7 +112,7 @@ SELECT store_id, COUNT(*) FROM customer GROUP BY store_id ;
 ## Soru 4
 SELECT country_id , Count(*) FROM city GROUP BY country_idORDER BY Count(*) DESC LIMIT 1;
 
-
+*******************************************************************
 
 # Odev 8
 
@@ -136,7 +140,7 @@ DELETE FROM employee
 WHERE name = 'Name Surname';
 RETURNING * ;
 
-
+*******************************************************************
 
 # Odev 9
 
@@ -152,8 +156,7 @@ INNER JOIN customer ON payment.customer_id = customer.customer_id;
 SELECT rental.rental_id, customer.first_name, customer.last_name FROM rental
 INNER JOIN customer ON rental.customer_id = customer.customer_id;
 
-
-
+*******************************************************************
 
 # Odev 10
 
@@ -170,3 +173,29 @@ SELECT rental.rental_id, customer.first_name, customer.last_name
 FROM rental
 FULL JOIN customer
 ON rental.customer_id = customer.customer_id;
+
+*******************************************************************
+
+# Odev 11
+
+## Soru 1
+SELECT first_name FROM actor UNION
+SELECT first_name FROM customer;
+
+## Soru 2
+SELECT first_name FROM actor INTERSECT
+SELECT first_name FROM customer;
+
+## Soru 3
+SELECT first_name FROM actor EXCEPT
+SELECT first_name FROM customer;
+
+## Soru 4
+SELECT first_name FROM actor UNION ALL
+SELECT first_name FROM customer;
+
+SELECT first_name FROM actor INTERSECT ALL 
+SELECT first_name FROM customer;
+
+SELECT first_name FROM actor EXCEPT ALL 
+SELECT first_name FROM customer;
